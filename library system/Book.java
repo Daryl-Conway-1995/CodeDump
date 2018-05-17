@@ -26,6 +26,11 @@ public class Book extends ReadingMaterial {
         this.setNumberOfPages(noPages);
         this.setPublisher(publisher);
         this.isHardBack = hardBack;
+        this.setType(1);
     }
 
+    @Override
+    public String toStringData() {
+        return super.toStringData()+":"+isHardBack;
+    }
 }

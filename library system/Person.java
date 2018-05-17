@@ -2,7 +2,9 @@ public class Person {
     private String name;
     private int age;
     private String jobTitle;
+    private int index = 0;
 
+    //create
     public Person(String name, int age, String jobTitle)
     {
         this.age = age;
@@ -10,19 +12,43 @@ public class Person {
         this.jobTitle = jobTitle;
     }
 
-    public String name()
+
+
+    //get methods
+    public String getName()
     {
         return this.name;
     }
 
+    public int getIndex() {
+        return index;
+    }
+
+    public int getAge() {return this.age;}
+
+
+
+    //set methods
     public void setAge(int age) {
         this.age = age;
     }
 
+    public void setIndex(int index) {
+        this.index = index;
+    }
+
+    public void setJobTitle(String jobTitle) {this.jobTitle =jobTitle;}
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+
+
     @Override
     public String toString()
     {
-        String result = "Name:" +name + " Age:" + age + " Job:" + jobTitle;
+        String result = ""+index+":" +name + ":" + age + ":" + jobTitle;
         //System.out.println(result);
         return result;
     }
