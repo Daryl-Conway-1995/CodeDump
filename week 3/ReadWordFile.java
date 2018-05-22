@@ -27,7 +27,7 @@ public class ReadWordFile {
 
     private void readTheFile()
     {
-        File file = new File("Words.txt");
+        File file = new File("words.txt");
         try
         {
             String line = "";
